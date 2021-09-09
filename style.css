@@ -1,16 +1,157 @@
-/* Type your code here */
-
-
-/* change the font family and spacing as per your project font */
-.footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
-	font-family: Nunito Sans;
-    font-style: normal;
-    
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+*{
+  font-family: 'Nunito Sans', sans-serif;
 }
+body {
+	overflow: hidden;
+}
+
+.bg {
+	position: absolute;
+	z-index: -1;
+	right: 10%;
+	bottom: -1%;
+}
+
+.bg>img {
+	width: 125%;
+}
+.logo{
+  position:fixed;
+  right: 6%;
+  top:3%;
+}
+.container{
+  border:1px solid transparent;
+  margin-left: 80px;
+  margin-top: 54px;
+}
+.container > h1{
+  
+	margin-left: 40px;
+	padding-top: 10px;
+	font-size: 50px;
+	font-weight:bolder;
+	text-shadow: 2px 2px 5px grey;
+}
+.container > h3{
+  margin-left: 40px;
+  font-size: x-large;
+  color: rgb(139, 134, 134);
+  margin-top: -25px;
+  font-weight: 600;
+}  
+table {
+	margin-left: 40px;
+	font-size: 20px;
+  font-weight: 600;
+	border-collapse: collapse;
+	height: 400px;
+	width: 1200px;
+	background-color: white;
+  box-shadow: -7px 1px 20px 0px rgba(76, 75, 75, 0.7);
+} 
+td{
+  height: 50px;
+	padding: 0 20px 0 20px;
+	font-size: larger;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border: 1px solid transparent;
+	border-bottom: 1px solid #0000003d;
+}   
+#first{
+	margin-left: 40px;
+  font-weight: 700;
+  font-size:large;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(236, 22, 22);
+	padding: 10px 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	height: 60px;
+	width: 1160px;
+}
+#sec{
+  color:gray;
+  font-weight: normal;
+}
+#three{
+  text-align: left;
+  width: 5%;
+}
+#four{
+  text-align: center;
+}
+
+#five{
+  text-align: end;
+}
+
+a {
+	text-decoration: none;
+	color: #2f80ed;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.footer{
+  display: flex;
+	flex-direction: row;
+	align-content: flex-end;
+	position: relative;
+	top: 35px;
+	margin-left: 120px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(87, 84, 84, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+
