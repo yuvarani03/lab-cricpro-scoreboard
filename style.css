@@ -9,7 +9,7 @@ body {
 .bg {
 	position: absolute;
 	z-index: -1;
-	left: 30%;
+	right: 10%;
 	bottom: -5%;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 .logo{
   position:fixed;
-  right: 6%;
+  right: 9%;
   top:3%;
 }
 .container{
