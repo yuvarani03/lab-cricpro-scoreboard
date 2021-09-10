@@ -9,12 +9,14 @@ body {
 .bg {
 	position: absolute;
 	z-index: -1;
-	right: 10%;
+  right: 10%;
 	bottom: -5%;
 }
 
 .bg>img {
 	width: 120%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .logo{
   position:fixed;
