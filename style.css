@@ -29,9 +29,9 @@ body {
 .container > h1{
   
 	margin-left: 40px;
-	padding-top: 10px;
-	font-size: 50px;
-	font-weight:bolder;
+	padding-top: -10px;
+	font-size: 40px;
+	font-weight:bold;
 	text-shadow: 2px 2px 5px grey;
 }
 .container > h3{
@@ -43,18 +43,16 @@ body {
 }  
 table {
 	margin-left: 40px;
-	font-size: 20px;
-  font-weight: 600;
+  font-weight: bold;
 	border-collapse: collapse;
-	height: 400px;
-	width: 1200px;
+	width: 800px;
 	background-color: white;
   box-shadow: -7px 1px 20px 0px rgba(76, 75, 75, 0.7);
 } 
 td{
-  height: 50px;
 	padding: 0 20px 0 20px;
-	font-size: larger;
+	font-size: 600;
+  height: 25px;
 	border-left: none;
 	border-right: none;
 	border-top: none;
@@ -69,11 +67,11 @@ td{
 	display: flex;
 	justify-content: space-between;
 	background-color: rgb(236, 22, 22);
-	padding: 10px 20px;
+	padding:  10px 20px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	height: 60px;
-	width: 1160px;
+	height: 50px;
+	width: 760px;
 }
 #sec{
   color:gray;
@@ -100,18 +98,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-.footer{
-  display: flex;
-	flex-direction: row;
-	align-content: flex-end;
-	position: relative;
-	top: 35px;
-	margin-left: 120px;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 600;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -133,9 +119,8 @@ a:hover {
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 30%;
+  width: 40%;
   position: relative;
-  transition: all 5s ease-in-out;
 }
 
 .popup .close {
@@ -154,4 +139,15 @@ a:hover {
   overflow: auto;
 }
 
+.footer{
+  display: flex;
+	flex-direction: row;
+	align-content: flex-end;
+	position: relative;
+	top: 35px;
+	margin-left: 120px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+}
 
